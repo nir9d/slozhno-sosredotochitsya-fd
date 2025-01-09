@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding-bottom: 30px;
+  display:grid;
+  gap:30px;
  
   background-color:var(--bg-page,#000028);
   background-attachment: fixed;
