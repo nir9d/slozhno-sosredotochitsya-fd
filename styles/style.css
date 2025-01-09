@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  
+  padding-bottom: 30px;
  
   background-color:var(--bg-page,#000028);
   background-attachment: fixed;
@@ -9,7 +9,7 @@
   background-position: center;
   
   
-
+ 
   background-image: var(--bg-image , url(../images/cover-image.png)
   );
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
