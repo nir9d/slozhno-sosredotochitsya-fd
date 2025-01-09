@@ -1,20 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  display: grid;
   
+ 
   background-color:var(--bg-page,#000028);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   
   
+
   background-image: var(--bg-image , url(../images/cover-image.png)
   );
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 /* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
@@ -34,6 +31,7 @@ color: var(--title-color,#DB00FF);
 
 text-shadow: 4px 4px 0px var(--text-shadow-color,#FF0070);
 justify-self: center;
+
 
 }
 .rec-decoration {
@@ -86,14 +84,16 @@ font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
 background-color: var(--bg-subtitle-color,#FF0070 );
+height: max-content;
+
 /* or 130% */
 
 color: #000028;
 }
 .header__paragraph {
 background-color: var(--header-paragraph-bg,#FF0070);
-margin-block: 55px;
-height: max-content;
+max-inline-size: 365px;
+
 
 
 }
@@ -101,23 +101,23 @@ height: max-content;
 
 
 .main__text {
-font-family: 'IBM Plex Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+ 
+  
 /* or 130% */
 
 color: var(--main-text,#F1B2CE );
 }
 .header {
   min-height: 668px;
-  padding: 10px;
   height: 100vh;
   display: grid;
   grid-template-rows: repeat(3,1fr);
-  
+  padding: 10px;
   
 }
 
@@ -127,6 +127,7 @@ color: var(--main-text,#F1B2CE );
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+
   /* or 130% */
   
   color: #FF0070;
@@ -163,6 +164,7 @@ img {
 .main {
   display: grid;
   gap: 50px;
+  padding: 10px;
 }
 .main__section {
   display: grid;
@@ -177,6 +179,8 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  padding: 10px;
+  
 }
 .main__how {
   gap:20px;
