@@ -1,4 +1,4 @@
-* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
  
@@ -9,31 +9,18 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
-  
-
-  background-image: var(--bg-image , url(../images/cover-image-dark.png))
-  ;
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image , url(../images/cover-image-dark.png));
 }
-/* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
 .title {
-  /* no focus */
-
-
-
 font-family: 'IBM Plex Mono';
 font-style: normal;
 font-weight: 700;
-font-size: 116px;
+font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 line-height: 82.5%;
-/* or 96px */
-
 color: var(--title-color,#DB00FF);
-
 text-shadow: 4px 4px 0px var(--text-shadow-color,#FF0070);
-justify-self: start;
-align-content: center;
 
+align-content: center;
 }
 .rec-decoration {
   position: absolute;
@@ -94,26 +81,15 @@ color: #000028;
 }
 .header__paragraph {
 background-color: var(--header-paragraph-bg,#FF0070);
-inline-size: 364px;
 justify-self: center;
 margin-block: 55px;
-
-
-
 }
-/* Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи выяснили, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём. */
-
-
 .main__text {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
- 
-  
-/* or 130% */
-
 color: var(--main-text,#F1B2CE );
 }
 .header {
@@ -121,25 +97,19 @@ color: var(--main-text,#F1B2CE );
   height: 100vh;
   display: grid;
   grid-template-rows: repeat(3,1fr);
-  
-  
+  padding: 10px;
 }
-
 .main__title {
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
-
-  /* or 130% */
-  
+  line-height: 23px; 
   color: #FF0070;
 }
 .header__theme-menu {
   justify-self: end;
   margin-block:65px ;
-  
 }
 .header__theme-menu-list {
   display: grid;
@@ -159,7 +129,6 @@ img {
   display: grid;
   grid-template-rows: 1fr;
   gap: 10px;
-  
 }
 .imgages {
   display: grid;
@@ -177,14 +146,15 @@ img {
 .main__article {
   display: grid;
   gap: 10px;
+  align-self:start ;
 }
 .footer {
   min-block-size: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
   padding: 10px;
   position: relative;
+  place-items: center;
 }
 .main__how {
   gap:20px;
@@ -303,8 +273,31 @@ height: 100%;
   
   justify-self: end;
   margin-block: 37px;
+  inline-size: 364px;
 }
 .title {
   margin-left: -20px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+}
+@media (width >= 1024px) {
+  .main__what .main__section  {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+  .main__what .main__title {
+    grid-column: span 3 / span 3;
+    inline-size: 30%;
+  }
+  .main__why .main__section {
+    grid-template-columns: 314px 1fr;
+    gap: 20px;
+}
+.main__how .main__section {
+  grid-template-columns: 314px 1fr;
+  gap: 20px;
+}
+.header__paragraph {
+  inline-size: 491px;
 }
 }
