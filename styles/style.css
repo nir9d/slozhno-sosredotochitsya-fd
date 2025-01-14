@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
- 
   display: grid;
   gap: 30px;
   background-color:var(--bg-page,#000028);
@@ -73,10 +70,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 23.4px;
 background-color: var(--bg-subtitle-color,#FF0070 );
-height: max-content;
-
-/* or 130% */
-
+height: max-content;  
 color: #000028;
 }
 .header__paragraph {
@@ -120,6 +114,11 @@ color: var(--main-text,#F1B2CE );
   background: transparent;
   color: #FF0070;
   cursor: pointer;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
 }
 img {
   object-fit: cover;
@@ -166,7 +165,22 @@ img {
 .main__how .subtitle:not(:first-child) {
 font-weight: 10;
 }
+.header__theme-menu-button:hover {
+  border: 1px solid #FF0070;
+}
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid #FF0070;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid #FF0070;
+  pointer-events: none;
+} 
 @media (width >=768px) {
   .page {
     padding: 10px;
@@ -273,11 +287,16 @@ height: 100%;
   
   justify-self: end;
   margin-block: 37px;
-  inline-size: 364px;
+  inline-size: 365px;
 }
 .title {
   margin-left: -20px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+.header__theme-menu {
+  margin-block-start: 175px;
+  margin-block-end: 70px;
+  margin-inline-end: 8px;
 }
 }
 @media (width >= 1024px) {
@@ -299,5 +318,15 @@ height: 100%;
 }
 .header__paragraph {
   inline-size: 491px;
+}
+.header__theme-menu {
+  justify-self: center;
+  margin-inline-start: 8px;
+  margin-block-start: 0;
+  margin-block-end: 215px;
+}
+.header__theme-menu-list {
+  grid-auto-flow: column;
+  gap: 23px;
 }
 }
