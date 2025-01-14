@@ -40,7 +40,21 @@
   box-shadow: 0 0 4px 2px #ff0070;
   background-color: #ff0070;
 }
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--text-shadow-color, #FF0070);
+}
+.link :hover {
+  border-bottom: 1px solid var(--decorated-border, #ff0070);
+}
 
+.link :focus {
+  outline: none;
+}
+
+.link :focus-visible {
+  border: 1px solid var(--decorated-border, #ff0070);
+}
 .decorated-zone::before {
   content: "";
   position: absolute;
