@@ -1,14 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --title-color: #FFC2E6;
   --text-shadow-color:#FF8DCB;
   --bg-subtitle-color:#FF8DCB;
@@ -23,10 +13,9 @@
   --button-border:#353430;
   --vision:hidden;
 }
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  --title-color: #FFC2E6;
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-color: #FFC2E6;
   --text-shadow-color:#FF8DCB;
   --bg-subtitle-color:#FF8DCB;
   --bg-header-color:#FF8DCB;
@@ -39,4 +28,5 @@
   --button-text-color:#353430;
   --button-border:#353430;
   --vision:hidden;
+}
 }
