@@ -31,10 +31,6 @@
   visibility: var(--vision);
   font-family: "IBM Plex Mono" , monospace;
 }
-.header__theme-menu-button{
-  width: 70px;
-  height: 26px;
-}
 .rec-decoration:after {
   content: "";
   display: block;
@@ -137,6 +133,8 @@
   font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
+  width: 70px;
+  height: 26px;
 }
 .img {
   width: 100%;
