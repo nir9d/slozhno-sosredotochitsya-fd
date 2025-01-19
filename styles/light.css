@@ -12,21 +12,26 @@
   --button-text-color:#353430;
   --button-border:#353430;
   --vision:hidden;
+  --hr-oppacity:#353430;
+  --title-text-color:#353430;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --title-color: #FFC2E6;
-  --text-shadow-color:#FF8DCB;
-  --bg-subtitle-color:#FF8DCB;
-  --bg-header-color:#FF8DCB;
-  --main-text:#353430;
-  --main-title-color:#353430;
-  --bg-page:#fff1f7;
-  --bg-image: url(../images/cover-image-light.png);
-  --header-paragraph-bg:#FF8DCB;
-  --decorated-border:#353430;
-  --button-text-color:#353430;
-  --button-border:#353430;
-  --vision:hidden;
+    --text-shadow-color:#FF8DCB;
+    --bg-subtitle-color:#FF8DCB;
+    --bg-header-color:#FF8DCB;
+    --main-text:#353430;
+    --main-title-color:#353430;
+    --bg-page:#fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --header-paragraph-bg:#FF8DCB;
+    --decorated-border:#353430;
+    --button-text-color:#353430;
+    --button-border:#353430;
+    --vision:hidden;
+    --hr-oppacity:#353430;
+    --title-text-color:#353430;
 }
 }
