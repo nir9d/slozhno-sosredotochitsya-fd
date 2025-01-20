@@ -9,11 +9,13 @@
   --bg-image: url(../images/cover-image-dark.png);
   --header-paragraph-bg:#FF0070;
   --decorated-border:#FF0070;
-  --focus-dec:#F1B2CE;
+  --focus-dec:#FF0070;
   --button-text-color:#FF0070;
   --button-border:#FF0070;
   --vision:visible;
-  --hr-oppacity:#F1B2CE;
+  --hr-oppacity:#FF007066;
   --title-text-color:#000028;
+  --link-hover:#F1B2CE;
+  --link-focus:#F1B2CE;
 }
 
