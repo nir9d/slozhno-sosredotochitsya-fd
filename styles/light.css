@@ -9,11 +9,14 @@
   --bg-image: url(../images/cover-image-light.png);
   --header-paragraph-bg:#FF8DCB;
   --decorated-border:#353430;
+  --focus-dec:#353430;
   --button-text-color:#353430;
   --button-border:#353430;
   --vision:hidden;
-  --hr-oppacity:#353430;
+  --hr-oppacity:#32312D66;
   --title-text-color:#353430;
+  --link-hover:#353430;
+  --link-focus:#353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,10 +31,13 @@
     --bg-image: url(../images/cover-image-light.png);
     --header-paragraph-bg:#FF8DCB;
     --decorated-border:#353430;
+    --focus-dec:#353430;
     --button-text-color:#353430;
     --button-border:#353430;
     --vision:hidden;
-    --hr-oppacity:#353430;
+    --hr-oppacity:#32312D66;
     --title-text-color:#353430;
+    --link-hover:#353430;
+    --link-focus:#353430;
 }
 }
